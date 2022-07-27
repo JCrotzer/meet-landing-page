@@ -319,8 +319,22 @@ footer p {
         margin: 40px 360px;
     }
 
-    .number {
+    .hero-pics {
+        display: flex;
+    }
 
+    .first-heros img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px; 
+        margin: 10px;
+    }
+    
+    .second-heros img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin: 10px;
     }
 
     footer {
@@ -345,8 +359,14 @@ footer p {
         margin-top: 100px;
     }
 
+    .description h2 {
+        font-size: 32px;
+    }
+
     .description h1 {
-        margin: 40px 430px;
+        font-size: 40px;
+        margin: 40px 390px;
+        line-height: 40px;
     }
 
     .description p {
