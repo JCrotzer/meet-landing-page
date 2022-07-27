@@ -1,0 +1,378 @@
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+.container {
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.logo {
+    margin: 50px 150px;
+}
+
+.hero-image {
+    width: 400px;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(46, 43, 43);
+    font-size: 36px;
+    line-height: 35px;
+    font-weight: 900;
+}
+
+.content p {
+    color: rgb(124, 120, 120);
+    text-align: center;
+    margin: 30px 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.download {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(97, 173, 173);
+    margin: 0 70px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+
+span {
+    color:rgb(140, 245, 245);
+    font-weight: 900;
+    margin-left: 3px;
+}
+
+.info {
+    width: 125px;
+    height: 50px;
+    background-color: rgb(142, 71, 160);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 24px;
+    margin: 10px 110px;
+}
+
+.line {
+    border-right: 1px solid rgb(207, 196, 196);
+    height: 100px;
+    margin-top: 50px;
+}
+
+.heros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-hero {
+    display: none;
+}
+
+.right-hero {
+    display: none;
+}
+
+.first-heros img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px; 
+    margin: 10px;
+}
+
+.second-heros img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.description h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color:rgb(97, 173, 173);
+    margin-top: 20px;
+    letter-spacing: 4px;
+}
+
+.description h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 40px;
+    color: rgb(46, 43, 43);
+    line-height: 30px;
+}
+
+.description p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 35px;
+    color: rgb(158, 154, 154);
+}
+
+.experience .line {
+    border-right: 1px solid rgb(207, 196, 196);
+    height: 100px;
+    margin: 50px 175px 0 175px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(207, 196, 196);
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(146, 141, 141);
+    font-weight: 700;
+    margin-bottom: 50px;
+    background-color: white;
+    position: relative;
+}
+
+footer {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 350px;
+    height: 400px;
+    margin-top: -68px;
+    background: linear-gradient(
+    rgba(77, 150, 168, 0.9),
+    rgba(77, 150, 168, 0.9)),
+    url('../assets/mobile/image-footer.jpg') 
+    center / cover
+    no-repeat;
+}
+
+footer h2 {
+    color: white;
+    font-size: 28px;
+    margin: 95px 50px 0 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin: -30px 60px 0 60px;
+}
+
+.download2 {
+    width: 200px;
+    height: 50px;
+    background-color:rgb(142, 71, 160);
+    margin: -40px 70px 50px 70px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+
+.version {
+    color:rgb(231, 187, 241)
+}
+
+/* TABLET */
+
+@media screen and (min-width : 820px) {
+
+    .container {
+        width: 820px;
+    }
+
+    .header {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content p {
+        text-align: center;
+        margin: 50px 200px;
+    }
+
+    .chat {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .download {
+        margin-left: 230px;
+    }
+
+    .info {
+        margin-left: -20px;
+    }
+
+    .hero-pics {
+        display: flex;
+    }
+
+    .description h1 {
+        font-size: 32px;
+        margin: 30px 240px;
+    }
+
+    .description p {
+        margin: 30px 150px;
+    }
+
+    footer {
+        width: 820px;
+        background: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)),
+        url('../assets/tablet/image-footer.jpg') 
+        center / cover
+        no-repeat;
+    }
+
+    footer h2 {
+        font-size: 32px;
+        margin: 100px 250px;
+        line-height: 35px;
+    }
+
+    footer p {
+        margin: -150px 180px 0 180px;
+        line-height: 20px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width : 1100px) {
+
+    .container {
+        width: 1200px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .left-hero {
+        display: block;
+        margin-left: -850px;
+    }
+
+    .right-hero {
+        display: block;
+        margin-right: -850px;
+        margin-top: -250px;
+    }
+
+    .content {
+        margin-top: -340px;
+    }
+
+    .content p {
+        margin: 40px 360px;
+    }
+
+    .number {
+
+    }
+
+    footer {
+        width: 1100px;
+        background: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)),
+        url('../assets/desktop/image-footer.jpg') 
+        center / cover
+        no-repeat;
+    }
+    
+    .download {
+        margin-left: 440px;
+    }
+
+    .info {
+        margin-left: -40px;
+    }
+
+    .line {
+        margin-top: 100px;
+    }
+
+    .description h1 {
+        margin: 40px 430px;
+    }
+
+    .description p {
+        margin: 40px 390px;
+    }
+
+    footer {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    footer h2 {
+        font-size: 28px;
+        margin: 50px 20px;
+    }
+
+    footer p {
+        font-size: 18px;
+        margin: 50px 100px;
+    }
+
+    .download2 {
+        margin-top: 50px; 
+    }
+}
